@@ -612,17 +612,34 @@
       }
     };
     _proto.onMessage = function onMessage(ev) {
-      var isFirstChunk = !this.established;
+      var data = JSON.parse(ev.data);
+      this.options.handleMessage(this.socket);
+      console.log('message recieved');
+      if (data.type === 'post') {
+        if (data.content === 'chunk') {
+          var chunk = data.message.chunk;
+          var isFirstChunk = !this.established;
+          this.established = true;
+          if (isFirstChunk && this.onEstablishedCallback) {
+            this.onEstablishedCallback(this);
+          }
+          if (this.destination) {
+            this.destination.write(chunk.data);
+          }
+        }
+      }
+
+      /* const isFirstChunk = !this.established;
       this.established = true;
-      if (isFirstChunk && this.hookOnEstablished) {
+       if (isFirstChunk && this.hookOnEstablished) {
         this.hookOnEstablished();
       }
-      if (isFirstChunk && this.onEstablishedCallback) {
+       if (isFirstChunk && this.onEstablishedCallback) {
         this.onEstablishedCallback(this);
       }
-      if (this.destination) {
+       if (this.destination) {
         this.destination.write(ev.data);
-      }
+      } */
     };
     return WSSource;
   }();
