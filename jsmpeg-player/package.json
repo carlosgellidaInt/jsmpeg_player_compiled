@@ -1,0 +1,58 @@
+{
+  "_from": "https://github.com/carlosgellidaInt/jsmpeg_player_compiled.git",
+  "_id": "@cycjimmy/jsmpeg-player@6.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-bVNHQ7VN9ecKT5AI/6RC7zpW/y4ca68a9txeR5Wiin+jKpUn/7buMe+5NPub89A8NNeNnKPQfrD2+c76ch36mA==",
+  "_location": "/@cycjimmy/jsmpeg-player",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@cycjimmy/jsmpeg-player",
+    "name": "@cycjimmy/jsmpeg-player",
+    "escapedName": "@cycjimmy%2fjsmpeg-player",
+    "scope": "@cycjimmy",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@cycjimmy/jsmpeg-player/-/jsmpeg-player-6.0.5.tgz",
+  "_shasum": "ab4a9a2eb915894eeba8ca6e39aca3e66d1609b6",
+  "_spec": "@cycjimmy/jsmpeg-player",
+  "_where": "/home/gellidao/Documents/jetsonconfigserver/jetsonconfigserver",
+  "author": {
+    "name": "cycjimmy",
+    "email": "cycjimmy@gmail.com",
+    "url": "https://github.com/cycjimmy"
+  },
+  "browser": "dist/jsmpeg-player.umd.min.js",
+  "bugs": {
+    "url": "https://github.com/cycjimmy/jsmpeg-player/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "MPEG1 Video Player Based On JSMpeg",
+  "exports": {
+    "require": "./dist/jsmpeg-player.cjs",
+    "import": "./dist/jsmpeg-player.esm.js"
+  },
+  "homepage": "https://github.com/cycjimmy/jsmpeg-player#readme",
+  "keywords": [
+    "jsmpeg",
+    "TS"
+  ],
+  "license": "MIT",
+  "main": "dist/jsmpeg-player.cjs",
+  "module": "dist/jsmpeg-player.esm.js",
+  "name": "@cycjimmy/jsmpeg-player",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cycjimmy/jsmpeg-player.git"
+  },
+  "type": "module",
+  "version": "6.0.5"
+}
